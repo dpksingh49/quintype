@@ -1,6 +1,6 @@
 ///  <reference  types="cypress" />
 
-import {Login} from "../elements/login_pom";  
+import {Login} from "../elements/login_page_object_model";  
 
 const login = new Login();
 describe("Verifying Login button on homepage", function() {
@@ -42,8 +42,9 @@ describe("Verifying Login button on homepage", function() {
       login.verifyingSearchBtn(login.searchIcon)
     })
 
-    //it("verifying SearchType area", function(){
-    //  login.verifyingSearchForm(login.searchTypeArea,"India");
-   // })
+    it("verifying SearchType area", function(){
+      login.verifyingSearchForm(login.searchTypeArea,"India");
+    })
+
   });
 
