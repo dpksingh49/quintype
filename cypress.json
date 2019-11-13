@@ -1,0 +1,7 @@
+{
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "baseUrl":"https://ahead-madrid.qtstage.io/"
+      
+}
+
