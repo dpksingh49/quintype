@@ -46,5 +46,9 @@ describe("Verifying Login button on homepage", function() {
       login.verifyingSearchForm(login.searchTypeArea,"India");
     })
 
+   // it("verifying search text",function() {
+     // login.verifyingSearchingText(login.clickForSearch);
+      //cy.wait(2000);
+    //})
   });
 

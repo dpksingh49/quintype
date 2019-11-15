@@ -20,6 +20,7 @@ export class Login{
     submenu_Technology = ".header-three-m__default-menu__24xMV > ul > li:nth-child(1) > ul > li:nth-child(2) > a";
     searchIcon = "[data-test-id=search-icon]";
     searchTypeArea = "#searchForm"
+    //clickForSearch =   "svg.icon > use"
 
     verifyingLogin(element) {
       cy.get(element).click({ force: true });
@@ -54,6 +55,9 @@ export class Login{
       cy.get(element).click({ force: true });
     }
     verifyingSearchForm(element,text){
-      cy.get(element).type(text);
+      cy.get(element).type(text, {force: true});
     }
+   // verifyingSearchingText(element){
+   //   cy.get(element).click({ force: true });
+    //s}
 }
